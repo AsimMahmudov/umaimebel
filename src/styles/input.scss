@@ -1,0 +1,31 @@
+.phone-input {
+	background: #f7f7f7 !important;
+	border-radius: 8px !important;
+	border: 1px solid #ececec !important;
+	input {
+		width: 100%;
+		font-size: 16px !important;
+		line-height: 18.26px !important;
+		font-weight: 400 !important;
+		color: #1c1b1f !important;
+		background: transparent !important;
+		height: 54px !important;
+		border: none !important;
+		border-top-right-radius: 8px !important;
+		border-bottom-right-radius: 8px !important;
+		overflow: hidden;
+	}
+	.react-international-phone-country-selector {
+		button {
+			border-top-left-radius: 8px !important;
+			border-bottom-left-radius: 8px !important;
+			overflow: hidden;
+			height: 100%;
+			justify-content: end;
+			width: 53px;
+			background: transparent !important;
+			border: none;
+		}
+	}
+}
+ 
