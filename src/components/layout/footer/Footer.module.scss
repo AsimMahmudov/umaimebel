@@ -139,14 +139,16 @@
           cursor: pointer;
           color: white;
           display: flex;
-          gap: 20px;
+          gap: 10px;
           margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
   
           .link {
             color: rgb(255, 255, 255);
             text-decoration: none;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 15px;
           }
         }
       }
