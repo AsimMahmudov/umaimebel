@@ -1,9 +1,13 @@
- import React from 'react';
+ import Catalog from '@/components/pages/home/catalog/Catalog';
+import Hero from '@/components/pages/home/hero/Hero';
+import React from 'react';
  
  const Home = () => {
   return (
     <div>
-      Home
+      {/* <Slider/> */}
+       <Hero/>
+       <Catalog/>
     </div>
   );
  };

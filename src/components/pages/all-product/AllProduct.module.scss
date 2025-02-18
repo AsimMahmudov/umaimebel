@@ -1,0 +1,48 @@
+.Hero {
+  width: 100%;
+  padding: 20px 0;
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .btn {
+      padding: 10px 30px;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 10px;
+      background: white;
+      border: solid 2px black;
+      transition: 0.2s;
+      cursor: pointer;
+  
+      &:hover {
+        background: black;
+        color: white;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px){
+  .Hero {
+    width: 100%;
+    padding: 20px 0;
+  
+    .content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  }
+  
+}
