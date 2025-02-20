@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import scss from "../header/BurgerMenu.module.scss";
 import Link from "next/link";
 import { FaHeart, FaShoppingCart, FaUserAlt } from "react-icons/fa";
+import { GoArrowRight } from "react-icons/go";
 
 interface LinksType {
 	name: string;
@@ -26,6 +27,9 @@ const BurgerMenu: FC<BurgerMenuProps> = ({ links, isOpen, setIsOpen }) => {
 				className={
 					isOpen ? `${scss.content} ${scss.active}` : `${scss.content}`
 				}>
+				<h1 className={scss.icon} onClick={() => setIsOpen(!isOpen)}>
+					<GoArrowRight />
+				</h1>
 				<div className={scss.nav}>
 					{links.map((item, index) => (
 						<Link

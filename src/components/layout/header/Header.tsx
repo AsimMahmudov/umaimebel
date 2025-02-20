@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import BurgerMenu from "./BurgerMenu";
 import Link from "next/link";
 import { FaHeart, FaShoppingCart, FaUserAlt } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { nav_links } from "../data";
+import { LuAlignRight } from "react-icons/lu";
  
 
 const Header = () => {
@@ -32,7 +32,7 @@ const Header = () => {
 						{isMobile ? (
 							<>
 								<button className={scss.bur} onClick={() => setIsOpen(!isOpen)}>
-								<GiHamburgerMenu />
+								<LuAlignRight />
 								</button>
 								<BurgerMenu links={nav_links} isOpen={isOpen}  setIsOpen={setIsOpen}/>
 							</>
@@ -59,4 +59,3 @@ const Header = () => {
 
 export default Header;
 
-/////////////////////////
