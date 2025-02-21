@@ -31,6 +31,7 @@
       flex-direction: column;
       gap: 20px;
       transition: 0.2s;
+      color: black;
 
       &:hover {
         background: #ebebeb;
@@ -40,11 +41,15 @@
 				font-size: 60px;
 				font-weight: 700;
 				line-height: 32px;
+      color: black;
+
 			}
       h2 {
 				font-size: 26px;
 				font-weight: 600;
 				line-height: 32px;
+      color: black;
+
 			}
 		}
 	}

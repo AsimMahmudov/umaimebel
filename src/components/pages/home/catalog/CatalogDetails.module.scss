@@ -1,0 +1,13 @@
+.CatalogDetails {
+
+  h2{
+    padding: 50px 0;
+    font-size: 32px;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  
+  }
+}

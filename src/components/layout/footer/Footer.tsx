@@ -7,9 +7,7 @@ import {
 	PHONE_NUMBER,
 } from "@/constants/admin";
 import { GoArrowUpRight } from "react-icons/go";
-import Image from "next/image";
 
-import map from "@/assets/image/image 11.png";
 import Contact from "@/components/pages/home/contact/Contact";
 
 const Footer = () => {
@@ -50,7 +48,15 @@ const Footer = () => {
 
 						<div className={scss.box2}>
 							<div className={scss.image_map}>
-								<Image fill objectFit="cover" src={map} alt="map" />
+								{/* <Image fill objectFit="cover" src={map} alt="map" /> */}
+								<div className='map'>
+									<iframe
+										src='/map.html'
+										frameBorder='0'
+										scrolling='no'
+										title='Map on 2GIS'
+									></iframe>
+								</div>
 							</div>
 
 							<Link className={scss.contact} href={`/`}>
