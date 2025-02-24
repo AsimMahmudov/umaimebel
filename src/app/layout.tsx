@@ -3,35 +3,36 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.scss";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/constants/seo/seo.constants";
 import LayoutPage from "@/components/layout/LayoutPage";
+import LayoutClient from "./layout.client";
 
 const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
-	subsets: ["latin"],
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-	title: {
-		default: SITE_NAME,
-		template: `%s | ${SITE_NAME}`,
-	},
-	description: SITE_DESCRIPTION,
+  title: {
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable}`}>
-				<LayoutPage>{children}</LayoutPage>
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <LayoutClient>{children}</LayoutClient>
+      </body>
+    </html>
+  );
 }
