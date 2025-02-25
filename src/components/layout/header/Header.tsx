@@ -3,8 +3,7 @@ import scss from "../header/Header.module.scss";
 import { useEffect, useState } from "react";
 import BurgerMenu from "./BurgerMenu";
 import Link from "next/link";
-import { FaHeart, FaShoppingCart, FaUserAlt } from "react-icons/fa";
-import { nav_links } from "../data";
+import { nav_links, social_media } from "../data";
 import { LuAlignRight } from "react-icons/lu";
  
 
@@ -44,9 +43,11 @@ const Header = () => {
 										))}
 								</div>
 								<div className={scss.buutons}>
-									 <button className={scss.btn}><FaHeart /></button>
-                   <button className={scss.btn}><FaShoppingCart /></button>
-                   <button className={scss.btn}><FaUserAlt /></button>
+									  {social_media.map((el,index) => (
+											 <Link key={index} href={el.link}>
+												<button className={scss.btn}><el.icon /></button>
+											 </Link>
+										))}
 								</div>
 							</>
 						)}
